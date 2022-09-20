@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  rocketbot:
+    image: rocketbot
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - ${PORT}:${PORT}
+    env_file:
+      - .env
