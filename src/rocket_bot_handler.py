@@ -30,7 +30,7 @@ async def ping_command(rocket_client: RocketChat):
                 ).astimezone()
                 ping_time = (time_now - time_recv).total_seconds() / 1000
                 rocket_client.chat_post_message(
-                    f"{time_now} ping: {ping_time:.3f} ms",
+                    f"{str(time_now).replace(':', '-')} ping: {ping_time:.3f} ms",
                     channel=channel,
                     alias="Bot",
                 ).json()
