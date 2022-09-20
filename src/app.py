@@ -28,8 +28,6 @@ async def startup_event():
         coro=rocket_bot_task(),
         name="rocket_bot_task",
     )
-    # connect bot to rocket chat
-    ...
 
 
 app.include_router(
