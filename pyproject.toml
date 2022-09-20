@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "rocket-bot"
+version = "0.1.0"
+description = ""
+authors = ["WildElaeagnus <54314123+akorzunin@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "rocket_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.85.0"
+rocketchat-API = "^1.26.0"
+python-dotenv = "^0.21.0"
+uvicorn = "^0.18.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+mypy = "^0.971"
+ipykernel = "^6.15.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
